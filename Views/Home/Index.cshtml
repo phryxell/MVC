@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Moment2___MVC.Models.PlayerModel>
+@{
+    ViewData["Title"] = "Startsida";
+}
+
+<h2 class="p-3 mb-2 bg-info text-white">Startsida</h2>
+<br />
+<p>Hejsan! Vill du vara med och bidraga till min lista?</p>
+<p>Ange ditt namn: </p>
+
+<form action="/Spelare" method="get">
+
+    <div class="form-group">
+        <input id="name" class="form-control" name="username" type="text" value="" /><br />
+        <input type="submit" value="Gå vidare" class="btn btn-primary" />
+    </div>
+
+</form>
+<br />
+<div class="container">
+    <div class="row">
+        @foreach (var player in Model)
+        {
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="~/images/fotboll.png" alt="Profilkort för tillagda fotbollsspelare">
+                    <div class="card-body">
+                        <h5 class="card-title">@player.Namn</h5>
+                        <p class="card-text">Lag: @player.Lag</p>
+                        <p class="card-text">Potential: @player.Potential</p>
+                        <p class="card-text">Position: @player.Position</p>
+                        <p class="card-text">Land: @player.Country</p>
+                        <a href="@player.Url" target="_blank" class="btn btn-success">SoFIFA</a>
+                    </div>
+                </div>
+            </div>
+            <br />
+        }
+    </div>
+</div>

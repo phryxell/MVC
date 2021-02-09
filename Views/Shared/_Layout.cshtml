@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="se">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>@ViewData["Title"]</title>
+    <!--<link rel="stylesheet" href="~/css/styles.css" type="text/css" />-->
+    <link href="~/bootstrap-v4-rtl/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/bootstrap-v4-rtl/css/StyleSheet.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/ab924046e2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        @await Html.PartialAsync("~/Views/Shared/_MenuBar.cshtml")
+    </header>
+    <main>
+        <br />
+        <div class="container-md">
+            @RenderBody()
+        </div>
+    </main>
+    @await Html.PartialAsync("~/Views/Shared/_Footer.cshtml")
+</body>
+</html>

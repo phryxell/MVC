@@ -1,0 +1,42 @@
+[
+  {
+    "Lag": "Manchester United",
+    "Namn": "Marcus Rashford",
+    "Url": "https://sofifa.com/player/231677/marcus-rashford/",
+    "Potential": "91",
+    "Position": "Mittfältare",
+    "Country": "UK"
+  },
+  {
+    "Lag": "Leeds",
+    "Namn": "Raphinha",
+    "Url": "https://sofifa.com/player/233419/raphael-dias-belloli/210026/",
+    "Potential": "87",
+    "Position": "Mittfältare",
+    "Country": "Övrigt land"
+  },
+  {
+    "Lag": "Sporting CP",
+    "Namn": "Pedro Gonçalves",
+    "Url": "https://sofifa.com/player/240950/pedro-antonio-pereira-goncalves/210026/",
+    "Potential": "87",
+    "Position": "Mittfältare",
+    "Country": "Övrigt land"
+  },
+  {
+    "Lag": "Manchester United",
+    "Namn": "Anthony Martial",
+    "Url": "https://sofifa.com/player/211300/anthony-martial/210026/",
+    "Potential": "87",
+    "Position": "Anfallare",
+    "Country": "Frankrike"
+  },
+  {
+    "Lag": "Sevilla",
+    "Namn": "Jules Kounde",
+    "Url": "https://sofifa.com/player/241486/jules-kounde/210026/",
+    "Potential": "87",
+    "Position": "Försvarare",
+    "Country": "Frankrike"
+  }
+]

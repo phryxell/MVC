@@ -1,0 +1,68 @@
+﻿@model Moment2___MVC.Models.PlayerModel
+@{
+    ViewData["Title"] = "Players";
+}
+
+<h2 class="p-3 mb-2 bg-info text-white">Spelare</h2>
+<br />
+<p>Varsågod @ViewBag.input och fyll i listan nu!</p>
+
+<form method="post">
+    <div class="form-group">
+        <div asp-validation-summary="ModelOnly"></div>
+        <label asp-for="Lag"></label>
+        <input class="form-control" asp-for="Lag" />
+        <span asp-validation-for="Lag">
+        </span>
+        <br />
+        <label asp-for="Namn"></label>
+        <input class="form-control" asp-for="Namn" />
+        <span asp-validation-for="Namn">
+        </span>
+        <br />
+        <label asp-for="Url"></label>
+        <input class="form-control" asp-for="Url" />
+        <span asp-validation-for="Url">
+        </span>
+        <br />
+        <label asp-for="Potential"></label>
+        <input class="form-control" asp-for="Potential" />
+        <span asp-validation-for="Potential">
+        </span>
+        <br />
+
+        <div class="form-check">
+            <label class="form-check-label" for="flexRadioDefault1">
+                <input class="form-check-input" asp-for="Position" value="Målvakt" type="radio" id="flexRadioDefault1">Målvakt
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label" for="flexRadioDefault2">
+                <input class="form-check-input" asp-for="Position" value="Försvarare" type="radio" id="flexRadioDefault2">Försvarare
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label" for="flexRadioDefault3">
+                <input class="form-check-input" asp-for="Position" value="Mittfältare" type="radio" id="flexRadioDefault3">
+                Mittfältare
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="form-check-label" for="flexRadioDefault4">
+                <input class="form-check-input" asp-for="Position" value="Anfallare" type="radio" id="flexRadioDefault4">
+                Anfallare
+            </label>
+        </div>
+        <span asp-validation-for="Position">
+        </span>
+        <br />
+        <select class="btn btn-success dropdown-toggle" asp-for="Country" asp-items="Model.Countries"></select>
+        <span asp-validation-for="Country">
+        </span>
+        <br />
+        <br />
+        <input type="submit" value="Lägg till spelare" class="btn btn-primary" />
+
+    </div>
+   
+</form>
